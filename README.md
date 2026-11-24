@@ -240,3 +240,4 @@ nothing added to commit but untracked files present (use "git add" to track)
 - `order.html`.
 
 Отчёт сохранён в папке `lighthouse/`.
+
