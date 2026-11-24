@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Учебный интернет-магазин">
+    <meta property="og:description" content="Учебный frontend-проект интернет-магазина.">
+    <meta property="og:image" content="https://username.github.io/kr1-html-css-shop/images/preview.jpg">
+
+    <title>Учебный интернет-магазин</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/main.js" defer></script>
+  </head>
+  <body id="top">
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__logo" href="index.html">ShopProject</a>
+
+      <nav class="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li class="site-nav__item">
+            <a class="site-nav__link site-nav__link--active" href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="catalog.html">Каталог</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="contacts.html">Контакты</a>
+          </li>
+          <li class="site-nav__item">
+            <a class="site-nav__link" href="index.html#popular">
+              Популярные товары
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+    <main>
+      <section class="hero">
+        <h1>Учебный интернет-магазин</h1>
+        <p>
+          Это стартовая страница учебного frontend-проекта.
+          В дальнейшем на её основе будет разработан многостраничный сайт
+          интернет-магазина или каталога услуг.
+        </p>
+        <a class="button" href="#popular">Перейти к товарам</a>
+      </section>
+      <section class="section" id="advantages">
+        <h2>Преимущества проекта</h2>
+
+        <ul class="advantages-list">
+          <li>понятная HTML-структура;</li>
+          <li>семантические блоки страницы;</li>
+          <li>подключение внешнего CSS-файла;</li>
+          <li>подготовка к разработке многостраничного сайта.</li>
+        </ul>
+      </section>
+      <section class="section" id="popular">
+        <h2>Популярные товары</h2>
+
+        <div class="products-grid">
+          <article class="product-card product-card--featured">
+            <img
+              src="images/notebook.svg"
+              srcset="images/notebook.svg 480w,
+                      images/notebook.svg 640w,
+                      images/notebook.svg 960w"
+              sizes="(max-width: 639px) 100vw,
+                    (max-width: 1023px) 50vw,
+                    33vw"
+              alt=""
+              width="640"
+              height="480"
+              loading="lazy"
+              class="product-card__image"
+            >
+            <h3 class="product-card__title">Блокнот «Идеи»</h3>
+            <p class="product-card__description">Блокнот формата A5, 160 страниц в клетку, плотная обложка.</p>
+            <p class="product-card__price">Цена: 490 руб.</p>
+            <button class="button product-card__button" type="button" data-product="Блокнот «Идеи»">Заказать</button>
+          </article>
+
+          <article class="product-card">
+            <img class="product-card__image" src="images/notebook.svg" alt="" width="640" height="420" loading="lazy">
+            <h3 class="product-card__title">Ежедневник «План»</h3>
+            <p class="product-card__description">Недатированный ежедневник для планов, задач и заметок.</p>
+            <p class="product-card__price">Цена: 790 руб.</p>
+            <button class="button product-card__button" type="button" data-product="Ежедневник «План»">Заказать</button>
+          </article>
+
+          <article class="product-card">
+            <img class="product-card__image" src="images/notebook.svg" alt="" width="640" height="420" loading="lazy">
+            <h3 class="product-card__title">Скетчбук</h3>
+            <p class="product-card__description">Альбом формата A5 с плотной бумагой для рисунков и набросков.</p>
+            <p class="product-card__price">Цена: 650 руб.</p>
+            <button class="button product-card__button" type="button" data-product="Скетчбук">Заказать</button>
+          </article>
+
+          <article class="product-card product-card--discount">
+            <img class="product-card__image" src="images/pen.svg" alt="" width="640" height="420" loading="lazy">
+            <h3 class="product-card__title">Набор гелевых ручек</h3>
+            <p class="product-card__description">Набор из 3 ручек с тонким стержнем для аккуратных записей.</p>
+            <p class="product-card__price">Цена: 350 руб.</p>
+            <button class="button product-card__button" type="button" data-product="Набор гелевых ручек">Заказать</button>
+          </article>
+
+          <article class="product-card">
+            <img class="product-card__image" src="images/pen.svg" alt="" width="640" height="420" loading="lazy">
+            <h3 class="product-card__title">Карандаши «Палитра»</h3>
+            <p class="product-card__description">Набор из 12 цветных карандашей для учёбы и творчества.</p>
+            <p class="product-card__price">Цена: 420 руб.</p>
+            <button class="button product-card__button" type="button" data-product="Карандаши «Палитра»">Заказать</button>
+          </article>
+
+          <article class="product-card">
+            <img class="product-card__image" src="images/pen.svg" alt="" width="640" height="420" loading="lazy">
+            <h3 class="product-card__title">Набор текстовыделителей</h3>
+            <p class="product-card__description">Три ярких маркера для конспектов и важных заметок.</p>
+            <p class="product-card__price">Цена: 390 руб.</p>
+            <button class="button product-card__button" type="button" data-product="Набор текстовыделителей">Заказать</button>
+          </article>
+
+          <article class="product-card">
+            <img class="product-card__image" src="images/backpack.svg" alt="" width="640" height="420" loading="lazy">
+            <h3 class="product-card__title">Пенал «Порядок»</h3>
+            <p class="product-card__description">Компактный пенал на молнии для ручек, карандашей и мелочей.</p>
+            <p class="product-card__price">Цена: 550 руб.</p>
+            <button class="button product-card__button" type="button" data-product="Пенал «Порядок»">Заказать</button>
+          </article>
+
+          <article class="product-card product-card--featured">
+            <img class="product-card__image" src="images/backpack.svg" alt="" width="640" height="420" loading="lazy">
+            <h3 class="product-card__title">Рюкзак «Старт»</h3>
+            <p class="product-card__description">Лёгкий рюкзак с основным отделением и регулируемыми лямками.</p>
+            <p class="product-card__price">Цена: 2 490 руб.</p>
+            <button class="button product-card__button" type="button" data-product="Рюкзак «Старт»">Заказать</button>
+          </article>
+
+          <article class="product-card">
+            <img class="product-card__image" src="images/notebook.svg" alt="" width="640" height="420" loading="lazy">
+            <h3 class="product-card__title">Папка для документов</h3>
+            <p class="product-card__description">Папка формата A4 на кнопке для тетрадей и распечаток.</p>
+            <p class="product-card__price">Цена: 290 руб.</p>
+            <button class="button product-card__button" type="button" data-product="Папка для документов">Заказать</button>
+          </article>
+
+          <article class="product-card">
+            <img class="product-card__image" src="images/notebook.svg" alt="" width="640" height="420" loading="lazy">
+            <h3 class="product-card__title">Набор закладок</h3>
+            <p class="product-card__description">Цветные закладки помогут быстро находить нужные страницы.</p>
+            <p class="product-card__price">Цена: 180 руб.</p>
+            <button class="button product-card__button" type="button" data-product="Набор закладок">Заказать</button>
+          </article>
+
+          <article class="product-card">
+            <img class="product-card__image" src="images/pen.svg" alt="" width="640" height="420" loading="lazy">
+            <h3 class="product-card__title">Линейка 30 см</h3>
+            <p class="product-card__description">Прозрачная линейка с чёткой разметкой для чертежей и измерений.</p>
+            <p class="product-card__price">Цена: 120 руб.</p>
+            <button class="button product-card__button" type="button" data-product="Линейка 30 см">Заказать</button>
+          </article>
+
+          <article class="product-card product-card--discount">
+            <img class="product-card__image" src="images/backpack.svg" alt="" width="640" height="420" loading="lazy">
+            <h3 class="product-card__title">Набор для учёбы</h3>
+            <p class="product-card__description">Блокнот, ручка и набор закладок — всё необходимое для занятий.</p>
+            <p class="product-card__price">Цена: 890 руб.</p>
+            <button class="button product-card__button" type="button" data-product="Набор для учёбы">Заказать</button>
+          </article>
+          </article>
+        </div>
+      </section>
+      <section class="section" id="reviews">
+        <h2>Отзывы покупателей</h2>
+
+        <div class="reviews-grid">
+          <article class="review-card">
+            <p class="review-card__rating" aria-label="Оценка: 5 из 5">★★★★★</p>
+            <p class="review-card__text">«Блокнот понравился: плотная бумага, удобный размер. Использую каждый день».</p>
+            <p class="review-card__author">Алексей</p>
+          </article>
+
+          <article class="review-card">
+            <p class="review-card__rating" aria-label="Оценка: 5 из 5">★★★★★</p>
+            <p class="review-card__text">«Заказала набор ручек — пишут мягко, цвета яркие. Буду заказывать ещё».</p>
+            <p class="review-card__author">Мария</p>
+          </article>
+
+          <article class="review-card">
+            <p class="review-card__rating" aria-label="Оценка: 4 из 5">★★★★☆</p>
+            <p class="review-card__text">«Рюкзак вместительный и лёгкий. Удобно брать с собой ноутбук и учебники».</p>
+            <p class="review-card__author">Дмитрий</p>
+          </article>
+
+          <article class="review-card">
+            <p class="review-card__rating" aria-label="Оценка: 5 из 5">★★★★★</p>
+            <p class="review-card__text">«Пенал аккуратный, всё нужное помещается. Хороший вариант для учёбы».</p>
+            <p class="review-card__author">Екатерина</p>
+          </article>
+
+          <article class="review-card">
+            <p class="review-card__rating" aria-label="Оценка: 5 из 5">★★★★★</p>
+            <p class="review-card__text">«Понравились закладки: яркие, страницы не мнут. Каталог понятный и удобный».</p>
+            <p class="review-card__author">Ирина</p>
+          </article>
+
+          <article class="review-card">
+            <p class="review-card__rating" aria-label="Оценка: 4 из 5">★★★★☆</p>
+            <p class="review-card__text">«Ежедневник удобен для планирования. Хотелось бы побольше цветов на выбор».</p>
+            <p class="review-card__author">Никита</p>
+          </article>
+
+          <article class="review-card">
+            <p class="review-card__rating" aria-label="Оценка: 5 из 5">★★★★★</p>
+            <p class="review-card__text">«Взяла набор для учёбы — всё необходимое уже вместе. Очень практично».</p>
+            <p class="review-card__author">Ольга</p>
+          </article>
+
+          <article class="review-card">
+            <p class="review-card__rating" aria-label="Оценка: 5 из 5">★★★★★</p>
+            <p class="review-card__text">«Хорошее качество за свою цену. Описание товаров помогло быстро выбрать».</p>
+            <p class="review-card__author">Сергей</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="faq">
+        <h2>Часто задаваемые вопросы</h2>
+
+        <details class="faq__item" name="faq">
+          <summary>Как оформить заказ?</summary>
+          <p>
+            Найдите нужный товар и нажмите кнопку «Заказать» в его карточке.
+            Откроется форма: укажите имя и e-mail, затем нажмите «Отправить заявку».
+            В этой учебной версии форма показывает работу интерфейса, но не отправляет
+            заявку в настоящий магазин.
+          </p>
+        </details>
+
+        <details class="faq__item" name="faq">
+          <summary>Можно ли изменить заказ?</summary>
+          <p>
+            В учебной версии заявка не сохраняется и не отправляется на сервер.
+            Если вы только открыли форму, её можно закрыть и выбрать другой товар.
+            После отправки демонстрационной формы новый заказ можно оформить заново.
+          </p>
+        </details>
+
+        <details class="faq__item" name="faq">
+          <summary>Как узнать, какой товар я выбрал?</summary>
+          <p>
+            При нажатии кнопки «Заказать» название товара должно подставиться в скрытое
+            поле формы автоматически. Если это не происходит, проверьте, что у кнопки
+            есть атрибут <code>data-product</code>, а в форме — поле
+            <code>id="selected-product"</code>.
+          </p>
+        </details>
+
+        <details class="faq__item" name="faq">
+          <summary>Можно ли заказать несколько товаров?</summary>
+          <p>
+            Сейчас форма рассчитана на один товар за раз. Чтобы выбрать другой товар,
+            закройте форму, нажмите «Заказать» в другой карточке и заполните заявку
+            ещё раз. Корзина с несколькими товарами в этом проекте пока не реализована.
+          </p>
+        </details>
+
+        <details class="faq__item" name="faq">
+          <summary>Какова стоимость доставки?</summary>
+          <p>
+            Доставка в проекте не рассчитывается, потому что это учебный сайт без
+            оформления реальных покупок. В настоящем интернет-магазине стоимость обычно
+            зависит от адреса, способа доставки и суммы заказа.
+          </p>
+        </details>
+
+        <details class="faq__item" name="faq">
+          <summary>Какие способы оплаты доступны?</summary>
+          <p>
+            Оплата на сайте не подключена. Не вводите данные банковской карты:
+            форма предназначена только для демонстрации HTML, CSS и JavaScript.
+            Для настоящей оплаты магазину потребовалось бы подключить платёжный сервис.
+          </p>
+        </details>
+
+        <details class="faq__item" name="faq">
+          <summary>Сохраняются ли данные из формы?</summary>
+          <p>
+            Нет. В текущей версии сайта данные не сохраняются и не передаются продавцу.
+            Не вводите настоящие личные данные, если проект размещён как демонстрационный.
+            Для обработки реальных заявок нужно отдельно настроить сервер и объяснить
+            пользователю, как будут использоваться его данные.
+          </p>
+        </details>
+
+        <details class="faq__item" name="faq">
+          <summary>Почему форма просит указать e-mail?</summary>
+          <p>
+            Поле e-mail показывает пример проверки формы и может понадобиться магазину
+            для связи по заявке. Браузер проверяет, что адрес похож на электронную почту,
+            но сама проверка не означает, что письмо действительно будет отправлено.
+          </p>
+        </details>
+
+        <details class="faq__item" name="faq">
+          <summary>Можно ли пользоваться сайтом с телефона?</summary>
+          <p>
+            Да, страницу можно открыть на телефоне. Для удобного отображения проверьте,
+            что в CSS есть адаптивные правила: карточки перестраиваются в одну колонку
+            на узком экране, а кнопки и текст не выходят за его границы.
+          </p>
+        </details>
+
+        <details class="faq__item" name="faq">
+          <summary>Как заменить изображения товаров?</summary>
+          <p>
+            Сохраните изображения в папку <code>images</code> проекта и укажите путь
+            к файлу в атрибуте <code>src</code> тега <code>&lt;img&gt;</code>.
+            Например: <code>src="images/notebook.jpg"</code>. Для каждого изображения
+            добавьте короткое описание в атрибут <code>alt</code>.
+          </p>
+        </details>
+      </section>
+      <aside class="aside-info">
+        <h2>Информация для студентов</h2>
+        <p>
+          На следующих практических занятиях этот проект будет расширяться:
+          появятся формы, модальное окно, дополнительные страницы, Flex/Grid,
+          БЭМ-структура и адаптивная версия сайта.
+        </p>
+      </aside>
+    </main>
+
+    <footer id="contacts">
+      <p>&copy; 2026 Учебный проект. Все права защищены.</p>
+      <p>Дисциплина: Фронтенд и бэкенд разработка</p>
+    </footer>
+
+    <dialog class="order-dialog" id="order-dialog" aria-labelledby="order-dialog-title">
+      <h2 class="order-dialog__title" id="order-dialog-title">Оформление заявки</h2>
+
+      <form class="order-form" id="order-form" action="#" method="post" novalidate>
+        <input type="hidden" id="selected-product" name="product">
+
+        <div class="order-form__field">
+          <label for="order-name">Имя</label>
+          <input
+            id="order-name"
+            name="name"
+            type="text"
+            autocomplete="name"
+            required
+            aria-describedby="name-hint"
+            placeholder="Введите ваше имя"
+          >
+        </div>
+
+        <div class="order-form__field">
+          <label for="order-email">E-mail</label>
+          <input
+            id="order-email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            required
+            aria-describedby="email-hint"
+            placeholder="Введите ваш email"
+          >
+        </div>
+
+        <div class="order-form__actions">
+          <button class="button button--primary" type="submit">
+            Отправить заявку
+          </button>
+
+          <button
+            class="button button--secondary"
+            id="close-order-dialog"
+            type="button"
+          >
+            Закрыть
+          </button>
+        </div>
+      </form>
+    </dialog>
+
+    <p class="success-message" id="success-message" hidden>
+      Форма успешно отправлена!
+    </p>
+
+    <a class="back-to-top" href="#top" aria-label="Вернуться наверх">↑</a>
+  </body>
+</html>
