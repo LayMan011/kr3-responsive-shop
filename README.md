@@ -241,3 +241,71 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 Отчёт сохранён в папке `lighthouse/`.
 
+
+# Контрольная работа №4
+
+Тема: «JavaScript: интерактивность, DOM, события, формы и валидация».
+
+## Основа проекта
+
+
+## Практическая работа №15
+
+Выполнено:
+
+- создан отдельный репозиторий `kr4-js-shop`;
+- перенесена основа интернет-магазина из КР №3;
+- создана папка `js`;
+- создан файл `js/data.js`;
+- создан файл `js/main.js`;
+- JavaScript подключён через `defer`;
+- создан объект товара;
+- написаны функции форматирования цены, расчёта скидки и определения статуса товара;
+- результат выведен в консоль;
+- результат выведен на страницу через `textContent`.
+
+## Принцип безопасного вывода данных
+
+Для вывода пользовательских данных и данных, которые в будущем могут прийти из формы, `localStorage` или API, используется `textContent`, а не `innerHTML`.
+
+## Структура проекта
+
+```text
+kr4-js-shop/
+├── index.html
+├── catalog.html
+├── product.html
+├── order.html
+├── contacts.html
+├── css/
+│   ├── style.css
+│   └── responsive.css
+├── js/
+│   ├── data.js
+│   └── main.js
+├── images/
+├── README.md
+└── .gitignore
+
+## Этап 16. Коммит изменений
+
+Проверьте состояние проекта:
+
+```bash
+git status
+On branch feature/js-basics
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+        modified:   css/responsive.css
+        modified:   index.html
+        modified:   js/main.js
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        js/data.js
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+
