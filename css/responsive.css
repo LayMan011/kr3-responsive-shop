@@ -248,3 +248,11 @@ body {
   outline: 3px solid var(--color-primary, #0057b8);
   outline-offset: 3px;
 }
+
+.product-output {
+  padding: 16px;
+  overflow-x: auto;
+  color: #f9fafb;
+  background-color: #111827;
+  border-radius: 8px;
+}
